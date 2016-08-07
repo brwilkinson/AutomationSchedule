@@ -1,0 +1,44 @@
+{
+    "Monday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    },
+    "Tuesday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    },
+    "Wednesday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    },
+    "Thursday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    },
+    "Friday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    },
+    "Saturday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    },
+    "Sunday": {
+        "Morning1": [],
+        "Morning2": [],
+        "Afternoon1": [],
+        "Night": []
+    }
+}
