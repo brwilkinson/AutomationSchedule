@@ -2,7 +2,9 @@
 
 This is a schedule for Stopping and Starting Virtual Machines in Azure Resource Manager
 
-The Schedule is defined in the JSON
+The Schedule is defined in the JSON file __AutomationSchedule.json__
+
+__Here is a sample:__
 
     "Monday": {
         "Night": {
@@ -18,6 +20,9 @@ The Schedule is defined in the JSON
         }
 
 It relies on Tags to be defined on your virtual machines.
+
+    $Environment = 'Dev'
+    New-AzureRmVM -Tags @{Name='Environment';Value=$Environment}
 
     $environment = $VM.Tags.Environment
 
