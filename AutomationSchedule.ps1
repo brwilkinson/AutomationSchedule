@@ -43,8 +43,16 @@ catch {
 $ScheduleURI = 'https://raw.githubusercontent.com/brwilkinson/AutomationSchedule/master/AutomationSchedule.json'
 $Schedule = Invoke-WebRequest -Uri $ScheduleURI -UseBasicParsing | foreach content | ConvertFrom-Json
 
+if ((get-date).IsDaylightSavingTime())
+{
+    $OffSet = -4
+}
+else 
+{
+    $OffSet = -5
+}
 
-$Now = [Datetime]::Now
+$Now = (Get-Date).ToUniversalTime().AddHours($Offset)
 $Hour = $Now.ToString('HH') -as [Int]
 $Period = Switch ($Hour)
 {
@@ -55,6 +63,12 @@ $Period = Switch ($Hour)
 } 
 
 $State = $Schedule.($Now.dayofweek).($Period)
+
+$Now
+$Hour
+$Period
+$State
+
 #endregion
 
 #region Correct VM State

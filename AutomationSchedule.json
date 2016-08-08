@@ -24,7 +24,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "On"
@@ -59,7 +59,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "On"
@@ -94,7 +94,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "On"
@@ -129,7 +129,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "On"
@@ -164,7 +164,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "On"
@@ -199,7 +199,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "Off"
@@ -234,7 +234,7 @@
         },
         "Afternoon": {
             "Dev": {
-                "State": "Off"
+                "State": "On"
             },
             "QA": {
                 "State": "Off"
