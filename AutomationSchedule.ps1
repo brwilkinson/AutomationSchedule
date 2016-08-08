@@ -45,11 +45,11 @@ $Schedule = Invoke-WebRequest -Uri $ScheduleURI -UseBasicParsing | foreach conte
 
 if ((get-date).IsDaylightSavingTime())
 {
-    $OffSet = -4
+    $OffSet = -5
 }
 else 
 {
-    $OffSet = -5
+    $OffSet = -4
 }
 
 $Now = (Get-Date).ToUniversalTime().AddHours($Offset)
