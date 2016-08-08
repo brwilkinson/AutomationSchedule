@@ -63,10 +63,10 @@ Get-AzureRmVM -PipelineVariable vm | Get-AzureRmVM -Status | ForEach-Object {
     Write-Warning -Message $VM.Name
     $environment = $VM.Tags.Environment
     $VMName = $_.Name
-    $Statuses = $_.Statuses
+    $Status = $_.Statuses | select -Property Code -Last 1
     $ScheduledState=$State.($environment).State
 
-    $VMStatus = Switch ($statuses.DisplayStatus)
+    $VMStatus = Switch ($Status)
     {
         'VM deallocated' {[pscustomobject]@{Name=$VMNAME;State="Off";Environment=$environment;ScheduledState=$ScheduledState}}
         'VM running'     {[pscustomobject]@{Name=$VMNAME;State="On";Environment=$environment;ScheduledState=$ScheduledState}}
