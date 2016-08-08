@@ -82,10 +82,13 @@ Get-AzureRmVM -PipelineVariable vm | Get-AzureRmVM -Status | ForEach-Object {
 
     $VMStatus = Switch ($Status)
     {
+        'PowerState/stopped'     {[pscustomobject]@{Name=$VMNAME;State="Off";Environment=$environment;ScheduledState=$ScheduledState}}
         'PowerState/deallocated' {[pscustomobject]@{Name=$VMNAME;State="Off";Environment=$environment;ScheduledState=$ScheduledState}}
         'PowerState/running'     {[pscustomobject]@{Name=$VMNAME;State="On";Environment=$environment;ScheduledState=$ScheduledState}}
         Default          {Write-Warning -Message "$($VM.Name) is: $_ - Not in Expected State"}
     }
+
+    $VMStatus
 
     if ($VMStatus.State -eq $VMStatus.ScheduledState)
     {
@@ -104,3 +107,5 @@ Get-AzureRmVM -PipelineVariable vm | Get-AzureRmVM -Status | ForEach-Object {
 
 }
 #endregion
+
+"End: " + $(Get-Date)
