@@ -60,34 +60,32 @@ $State = $Schedule.($Now.dayofweek).($Period)
 #region Correct VM State
 Get-AzureRmVM -PipelineVariable vm | Get-AzureRmVM -Status | ForEach-Object {
     
-    Write-Warning -Message $VM.Name
+    Write-Verbose -Message $VM.Name
     $environment = $VM.Tags.Environment
     $VMName = $_.Name
-    $Status = $_.Statuses | select -Property Code -Last 1
+    $Status = $_.Statuses | select -ExpandProperty Code -Last 1
     $ScheduledState=$State.($environment).State
 
     $VMStatus = Switch ($Status)
     {
         'VM deallocated' {[pscustomobject]@{Name=$VMNAME;State="Off";Environment=$environment;ScheduledState=$ScheduledState}}
         'VM running'     {[pscustomobject]@{Name=$VMNAME;State="On";Environment=$environment;ScheduledState=$ScheduledState}}
-        Default          {Write-Error -Message "$_ Not in Expected State"}
+        Default          {Write-Warning -Message "$($VM.Name) is: $_ - Not in Expected State"}
     }
 
     if ($VMStatus.State -eq $VMStatus.ScheduledState)
     {
-        Write-Verbose -Message "$($VMStatus.Name) already in correct state" -Verbose
+        Write-Verbose -Message "NoChange to: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)" -Verbose
     }
     elseif ($VMStatus.ScheduledState -eq 'Off')
     {
         Get-AzureRmVM -Name $VMStatus.Name -ResourceGroupName $vm.ResourceGroupName | Stop-AzureRmVM -Force -Verbose
+        Write-Warning -Message "Stopping: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)"
     }
     elseif ($VMStatus.ScheduledState -eq 'On') 
     { 
         Get-AzureRmVM -Name $VMStatus.Name -ResourceGroupName $vm.ResourceGroupName | Start-AzureRmVM -Verbose
-    }
-    else
-    {
-        Write-Error -Message "$VMName not in Schedule"
+        Write-Warning -Message "Starting: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)"
     }
 
 }
