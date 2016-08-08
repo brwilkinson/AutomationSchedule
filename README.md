@@ -49,7 +49,7 @@ VM's tagged as __Prod__:
 * Will be switched off over the weekend, until Monday at 7.05am, when they will be switched on 
 
 VM's tagged as __QA__ or __Dev__  
-* Will be switched off between 11.05pm to 7.05pm during the weekdays
+* Will be switched off between 11.05pm to 7.05am during the weekdays
 * Will be switched off over the weekend, until Monday at 7.05am, when they will be switched on
 
 
