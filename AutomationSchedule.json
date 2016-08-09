@@ -1,247 +1,120 @@
-{
-    "Monday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "On"
-            }
+{ 
+  "Monday" : {  
+      "Afternoon" : {"Dev" : { "State" : "On" },
+                     "Prod" : { "State" : "On" },
+                     "QA" : { "State" : "On" },
+                     "Test" : "NoChange"
         },
-        "Morning": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Morning" : { "Dev" : { "State" : "On" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "On" },
+                    "Test" : "NoChange"
         },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Night" : { "Dev" : { "State" : "Off" },
+                  "Prod" : { "State" : "On" },
+                  "QA" : { "State" : "Off" },
+                  "Test" : "NoChange"
         }
     },
-    "Tuesday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "On"
-            }
+  "Tuesday" : { 
+      "Afternoon" : { "Dev" : { "State" : "On" },
+                     "Prod" : { "State" : "On" },
+                     "QA" : { "State" : "On" },
+                     "Test" : "NoChange"
         },
-        "Morning": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Morning" : { "Dev" : { "State" : "On" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "On" },
+                    "Test" : "NoChange"
         },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Night" : { "Dev" : { "State" : "Off" },
+                  "Prod" : { "State" : "On" },
+                  "QA" : { "State" : "Off" },
+                  "Test" : "NoChange"
         }
     },
-    "Wednesday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "On"
-            }
+  "Wednesday" : { 
+      "Afternoon" : { "Dev" : { "State" : "On" },
+                      "Prod" : { "State" : "On" },
+                      "QA" : { "State" : "On" },
+                      "Test" : "NoChange"
         },
-        "Morning": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Morning" : { "Dev" : { "State" : "On" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "On" },
+                    "Test" : "NoChange"
         },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Night" : { "Dev" : { "State" : "Off" },
+                  "Prod" : { "State" : "On" },
+                  "QA" : { "State" : "Off" },
+                  "Test" : "NoChange"
         }
     },
-    "Thursday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+  "Thursday" : { 
+      "Afternoon" : { "Dev" : { "State" : "On" },
+                      "Prod" : { "State" : "On" },
+                      "QA" : { "State" : "On" },
+                      "Test" : "NoChange"
         },
-        "Morning": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Morning" : { "Dev" : { "State" : "On" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "On" },
+                    "Test" : "NoChange"
         },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Night" : { "Dev" : { "State" : "Off" },
+                  "Prod" : { "State" : "On" },
+                  "QA" : { "State" : "On" },
+                  "Test" : "NoChange"
         }
     },
-    "Friday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "On"
-            }
+ "Friday" : { 
+    "Afternoon" : { "Dev" : { "State" : "On" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "On" },
+                    "Test" : "NoChange"
         },
-        "Morning": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Morning" : { "Dev" : { "State" : "On" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "On" },
+                    "Test" : "NoChange"
         },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "On"
-            },
-            "Prod": {
-                "State": "On"
-            }
+      "Night" : {   "Dev" : { "State" : "Off" },
+                    "Prod" : { "State" : "On" },
+                    "QA" : { "State" : "Off" },
+                    "Test" : "NoChange"
+        }
+    },    
+  "Saturday" : { 
+      "Afternoon" : { "Dev" : { "State" : "On" },
+                      "Prod" : { "State" : "Off" },
+                      "QA" : { "State" : "Off" },
+                      "Test" : "NoChange"
+        },
+      "Morning" : { "Dev" : { "State" : "Off" },
+                    "Prod" : { "State" : "Off" },
+                    "QA" : { "State" : "Off" },
+                    "Test" : "NoChange"
+        },
+      "Night" : { "Dev" : { "State" : "Off" },
+                  "Prod" : { "State" : "Off" },
+                  "QA" : { "State" : "Off" },
+                  "Test" : "NoChange"
         }
     },
-    "Saturday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "Off"
-            }
+  "Sunday" : { 
+      "Afternoon" : { "Dev" : { "State" : "On" },
+                      "Prod" : { "State" : "Off" },
+                     "QA" : { "State" : "Off" },
+                     "Test" : "NoChange"
         },
-        "Morning": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "Off"
-            }
+      "Morning" : { "Dev" : { "State" : "Off" },
+                    "Prod" : { "State" : "Off" },
+                    "QA" : { "State" : "Off" }
         },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "Off"
-            }
+      "Night" : { "Dev" : { "State" : "Off" },
+                  "Prod" : { "State" : "Off" },
+                  "QA" : { "State" : "Off" },
+                  "Test" : "NoChange"
         }
-    },
-    "Sunday": {
-        "Night": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "Off"
-            }
-        },
-        "Morning": {
-            "Dev": {
-                "State": "Off"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "Off"
-            }
-        },
-        "Afternoon": {
-            "Dev": {
-                "State": "On"
-            },
-            "QA": {
-                "State": "Off"
-            },
-            "Prod": {
-                "State": "Off"
-            }
-        }
-    }
+    }    
 }
