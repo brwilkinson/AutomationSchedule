@@ -92,17 +92,17 @@ Get-AzureRmVM -PipelineVariable vm | Get-AzureRmVM -Status | ForEach-Object {
 
     if ($VMStatus.State -eq $VMStatus.ScheduledState -or $VMStatus.ScheduledState -eq 'NoChange')
     {
-        Write-Verbose -Message "NoChange to: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)" -Verbose
+        Write-Verbose -Message "NoChange to: [$($VMStatus.Name)] Scheduled: [$($VMStatus.ScheduledState)], Current: $($VMStatus.State)" -Verbose
     }
     elseif ($VMStatus.ScheduledState -eq 'Off')
     {
         Get-AzureRmVM -Name $VMStatus.Name -ResourceGroupName $vm.ResourceGroupName | Stop-AzureRmVM -Force -Verbose
-        Write-Warning -Message "Stopping: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)"
+        Write-Warning -Message "Stopping: [$($VMStatus.Name)] Scheduled: [$($VMStatus.ScheduledState)], Current: $($VMStatus.State)"
     }
     elseif ($VMStatus.ScheduledState -eq 'On') 
     { 
         Get-AzureRmVM -Name $VMStatus.Name -ResourceGroupName $vm.ResourceGroupName | Start-AzureRmVM -Verbose
-        Write-Warning -Message "Starting: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)"
+        Write-Warning -Message "Starting: [$($VMStatus.Name)] Scheduled: [$($VMStatus.ScheduledState)], Current: $($VMStatus.State)"
     }
 
 }
