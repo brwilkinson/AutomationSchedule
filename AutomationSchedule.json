@@ -13,7 +13,7 @@
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "On" },
                   "QA" : { "State" : "Off" },
-                  "Test" : { "State" : "NoChange" }
+                  "Test" : { "State" : "Off" }
         }
     },
   "Tuesday" : { 
@@ -30,7 +30,7 @@
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "On" },
                   "QA" : { "State" : "Off" },
-                  "Test" : { "State" : "NoChange" }
+                  "Test" : { "State" : "Off" }
         }
     },
   "Wednesday" : { 
@@ -47,7 +47,7 @@
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "On" },
                   "QA" : { "State" : "Off" },
-                  "Test" : { "State" : "NoChange" }
+                  "Test" : { "State" : "Off" }
         }
     },
   "Thursday" : { 
@@ -64,7 +64,7 @@
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "On" },
                   "QA" : { "State" : "On" },
-                  "Test" : { "State" : "NoChange" }
+                  "Test" : { "State" : "Off" }
         }
     },
  "Friday" : { 
@@ -81,7 +81,7 @@
       "Night" : {   "Dev" : { "State" : "Off" },
                     "Prod" : { "State" : "On" },
                     "QA" : { "State" : "Off" },
-                    "Test" : { "State" : "NoChange" }
+                    "Test" : { "State" : "Off" }
         }
     },    
   "Saturday" : { 
@@ -98,7 +98,7 @@
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "Off" },
                   "QA" : { "State" : "Off" },
-                  "Test" : { "State" : "NoChange" }
+                  "Test" : { "State" : "Off" }
         }
     },
   "Sunday" : { 
@@ -109,12 +109,13 @@
         },
       "Morning" : { "Dev" : { "State" : "Off" },
                     "Prod" : { "State" : "Off" },
-                    "QA" : { "State" : "Off" }
+                    "QA" : { "State" : "Off" },
+                    "Test" : { "State" : "NoChange" }
         },
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "Off" },
                   "QA" : { "State" : "Off" },
-                  "Test" : { "State" : "NoChange" }
+                  "Test" : { "State" : "Off" }
         }
     }    
 }
