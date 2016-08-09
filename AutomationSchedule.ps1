@@ -90,7 +90,7 @@ Get-AzureRmVM -PipelineVariable vm | Get-AzureRmVM -Status | ForEach-Object {
 
     $VMStatus
 
-    if ($VMStatus.State -eq $VMStatus.ScheduledState)
+    if ($VMStatus.State -eq $VMStatus.ScheduledState -or $VMStatus.ScheduledState -eq 'NoChange')
     {
         Write-Verbose -Message "NoChange to: $($VMStatus.Name) Scheduled: $($VMStatus.ScheduledState), Current: $($VMStatus.State)" -Verbose
     }
