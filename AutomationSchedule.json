@@ -63,7 +63,7 @@
         },
       "Night" : { "Dev" : { "State" : "Off" },
                   "Prod" : { "State" : "On" },
-                  "QA" : { "State" : "On" },
+                  "QA" : { "State" : "Off" },
                   "Test" : { "State" : "Off" }
         }
     },
@@ -85,7 +85,7 @@
         }
     },    
   "Saturday" : { 
-      "Afternoon" : { "Dev" : { "State" : "On" },
+      "Afternoon" : { "Dev" : { "State" : "Off" },
                       "Prod" : { "State" : "Off" },
                       "QA" : { "State" : "Off" },
                       "Test" : { "State" : "NoChange" }
@@ -102,7 +102,7 @@
         }
     },
   "Sunday" : { 
-      "Afternoon" : { "Dev" : { "State" : "On" },
+      "Afternoon" : { "Dev" : { "State" : "Off" },
                       "Prod" : { "State" : "Off" },
                      "QA" : { "State" : "Off" },
                      "Test" : { "State" : "NoChange" }
